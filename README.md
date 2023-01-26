@@ -14,10 +14,10 @@ grep Huge /proc/meminfo
 
 Most likely, your huge page size will be configured to 2 MB, which is the standard on modern systems.
 
-Now let's change our pages size to 100 MB(you can change it to any values).
+Now let's change our pages size to 2GB i.e 2*1024 (you can change it to any values).
 In order to do so run the following command:
 ```
-sudo sysctl -w vm.nr_hugepages=102400
+sudo sysctl -w vm.nr_hugepages=1024
 ```
 To make these changes persistent so that it will stay even after reboot, you have to add a command to the file at this location.
 `/etc/sysctl.conf`.
@@ -28,7 +28,7 @@ sudo vim /etc/sysctl.conf
 
 And add this command  at last line manually to the file:
 ```
-vm.nr_hugepages = 102400
+vm.nr_hugepages = 1024
 ```
 After that save and exit the file.
 
