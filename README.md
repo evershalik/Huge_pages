@@ -40,3 +40,7 @@ grep Huge /proc/meminfo
 This time you will find some different values like this:
 
 ![image](https://user-images.githubusercontent.com/98207888/204807862-3b1cfd47-c18d-44b4-b8e2-f904113986dc.png)
+
+
+Reference:
+[Click here](https://wiki.debian.org/Hugepages)
