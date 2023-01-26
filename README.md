@@ -14,7 +14,7 @@ grep Huge /proc/meminfo
 
 Most likely, your huge page size will be configured to 2 MB, which is the standard on modern systems.
 
-Now let's change our pages size to 2GB i.e 2*1024 (you can change it to any values).
+Now let's change our pages size to 2GB i.e 2MB*1024 (you can change it to any values).
 In order to do so run the following command:
 ```
 sudo sysctl -w vm.nr_hugepages=1024
